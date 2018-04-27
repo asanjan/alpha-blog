@@ -1,4 +1,67 @@
-<h1>
- First line
-</h1>
-<%= link_to 'About', about_path %>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    background-color: lightgreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+nav {
+    float: left;
+    max-width: 130px;
+    margin: 0;
+    padding: 1em;
+}
+
+article {
+    margin-left:110px;
+    border-left: 1px solid gray;
+    padding:1em;
+}
+    
+img {
+        width="100%"
+    }
+</style>
+
+<title>My First Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style="background-color:powderblue;">
+    
+<header>
+<h1 class=heading>This is a Page for Fantasy Football Fans</h1>
+</header>
+
+<img scr="https://www.32red.com/blog/wp-content/uploads/2017/07/prem-fant-1000.jpg" alt="Fantasy Football" width=max align=center>
+
+<nav>
+<ul>
+<li><a href="http://www.livescore.com">Results</a>
+</li>
+<li><a href="https://fantasy.premierleague.com">Game.</a></li>
+  <li> <%= link_to 'About', about_path %> </li>
+</ul>
+</nav>
+
+<article>
+<h2>Fantasy Football Kings</h2>
+<p>Where you can find all you need to be a fantasy football king.</p>
+</article>
+
+<footer>Copyright &copy; Fantasy King</footer>
+
+</body>
+
+</html>
